@@ -1,4 +1,59 @@
+body {
+    background-color: #F5F5F5;
+}
 
-p {
+section > p {
+    padding: 2%;
     color: #373d3f;
+}
+
+h1 {
+    padding: 1%;
+}
+
+i.fa-html5 {
+    font-size: 3em;
+    color: #F6491D;
+}
+
+i.fa-css3-alt {
+    font-size: 3em;
+    color: #066DB9;
+}
+
+i.fa-js-square {
+    font-size: 3em;
+    color: #EFD81A;
+}
+
+.fa_with_bg{
+    position: relative;
+}
+
+.fa_with_bg::after{
+    position: absolute;
+    content: '';
+    background: #000;
+    z-index: -1;
+    top: 10px;
+    left: 3px;
+    width: 36px;
+    height: 33px;
+}
+
+i.fa-bootstrap {
+    color: #5A3A7B;
+    font-size: 3em;
+}
+
+a[href^="https"] {
+    text-decoration: none;
+}
+
+a[href^="https"]:hover {
+    text-decoration: underline;
+}
+
+footer > a:hover {
+    text-decoration: underline;
 }
