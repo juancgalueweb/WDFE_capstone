@@ -1,5 +1,8 @@
 body {
-    background-color: #F5F5F5;
+    background: #EDF5E1;
+    background: -webkit-linear-gradient(top, #EDF5E1, #8EE4AF);
+    background: -moz-linear-gradient(top, #EDF5E1, #8EE4AF);
+    background: linear-gradient(to bottom, #EDF5E1, #8EE4AF);;
 }
 
 section > p {
@@ -24,6 +27,21 @@ i.fa-css3-alt {
 i.fa-js-square {
     font-size: 3em;
     color: #EFD81A;
+}
+
+.fa_with_bg_white {
+    position: relative;
+}
+
+.fa_with_bg_white::after{
+    position: absolute;
+    content: '';
+    background: #fff;
+    z-index: -1;
+    top: 10px;
+    left: 3px;
+    width: 28px;
+    height: 30px;
 }
 
 .fa_with_bg{
@@ -54,6 +72,8 @@ a[href^="https"]:hover {
     text-decoration: underline;
 }
 
-footer > a:hover {
-    text-decoration: underline;
+.img-fluid {
+    max-width: 20%;
+    max-height: auto;
+    min-width: 200px;
 }
