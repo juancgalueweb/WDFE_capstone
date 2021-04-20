@@ -6,3 +6,7 @@ img {
     max-height: 420px;
     max-width: auto;
 }
+
+.my-gallery figcaption {
+    display: none;
+}
