@@ -1,12 +1,17 @@
 body {
-    background-color: #EDF5E1;
+    background-color: #FFEC99;
 }
 
 img {
-    max-height: 420px;
-    max-width: auto;
+    width: 100%;
+    height: auto;
 }
 
 .my-gallery figcaption {
     display: none;
+}
+
+figure {
+    display: inline-block;
+    width: 48%;
 }
