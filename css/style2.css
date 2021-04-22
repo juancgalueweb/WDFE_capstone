@@ -1,5 +1,15 @@
-body {
-    background-color: #FFEC99;
+#beaches {
+    background: #827FE9;
+    background: -webkit-linear-gradient(bottom, #827FE9, #72B1E9);
+    background: -moz-linear-gradient(bottom, #827FE9, #72B1E9);
+    background: linear-gradient(to top, #827FE9, #72B1E9);
+}
+
+#mountains {
+    background: #BE712E;
+    background: -webkit-linear-gradient(bottom, #BE712E, #DFBA9A);
+    background: -moz-linear-gradient(bottom, #BE712E, #DFBA9A);
+    background: linear-gradient(to top, #BE712E, #DFBA9A);;
 }
 
 img {
@@ -13,5 +23,5 @@ img {
 
 figure {
     display: inline-block;
-    width: 48%;
+    width: 46%;
 }
