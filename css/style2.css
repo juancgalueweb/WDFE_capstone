@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
 #beaches {
     background: #827FE9;
     background: -webkit-linear-gradient(bottom, #827FE9, #72B1E9);
@@ -21,7 +23,14 @@ img {
     display: none;
 }
 
-figure {
-    display: inline-block;
-    width: 46%;
+@media screen and (min-width: 768px) {
+    figure {
+        display: inline-block;
+        width: 46%;
+    }
+}
+
+h1 {
+    padding: 1%;
+    font-family: 'Amatic SC', cursive;
 }

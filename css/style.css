@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
 body {
     background: #EDF5E1;
     background: -webkit-linear-gradient(top, #EDF5E1, #8EE4AF);
@@ -10,8 +12,9 @@ section > p {
     color: #373d3f;
 }
 
-h1 {
+h1, h2 {
     padding: 1%;
+    font-family: 'Amatic SC', cursive;
 }
 
 i.fa-html5 {
