@@ -80,3 +80,11 @@ a[href^="https"]:hover {
     max-height: auto;
     min-width: 200px;
 }
+
+textarea {
+    resize: none;
+}
+
+span {
+    color: red;
+}
