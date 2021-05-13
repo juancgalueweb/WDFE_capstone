@@ -22,6 +22,6 @@
         mail($mailTo, $emailSubject, $txt, $headers);
         echo "Thank you very much for your time in writting your comments about my first webpage."
     ?>
-    <h1><a href="../index.html">Go back to the homepage.</a></h1>
+    <h1><a href="../index.html">Go back to the homepage</a></h1>
 </body>
 </html>
