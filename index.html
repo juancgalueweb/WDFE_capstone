@@ -87,8 +87,8 @@
             <div class="col-md-8 offset-md-2 py-5">
                 <h1 class="text-center">Contact Me</h1>
                 <p class="lead">Please be nice with your comments or suggestions, this is my first project. Thank you for your participation.</p>
-                <form action="php/contact.php" method="post" role="form" class="row g-3 needs-validation" novalidate>
-
+                <form role="form" class="row g-3 needs-validation" novalidate> 
+                    <!-- action="php/contact.php" method="post"  -->
                     <div class="messages"></div>  <!-- that will serve us to display the success/error message after sending form via AJAX-->
                     <div class="col-md-3">
                         <label for="formName" class="form-label">First name <span>*</span></label>
@@ -368,7 +368,7 @@
 
                     <div class="col-md-12">
                         <p class="text-muted text-start"><span>* </span>These fields are required.</p>
-                        <button type="submit" class="btn btn-danger">Send form</button>
+                        <button type="submit" id="enviar" class="btn btn-danger">Send form</button>
                     </div>
                 </form>
             </div>
@@ -416,5 +416,31 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="js/form_validation.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        $("enviar").click(function() {
+            let name = $("formName").val();
+            let lastName = $("lastName").val();
+            let country = $("country").val();
+            let email = $("emailAddress").val();
+            let comments = $("textArea").val();
+
+            if (name == "" || lastName == "" || country == "" || email == "" || comments == "") {
+                swal({
+                    title: "Fields empty/invalid!",
+                    text: "Please, check all the fields!",
+                    icon: "warning",
+                    button: "Retry",
+                });
+            } else {
+                swal({
+                    title: "Thank you!",
+                    text: "You just sent the form",
+                    icon: "success",
+                    button: "Great!",
+                });
+            }
+        } ); 
+    </script>
 </body>
 </html>
