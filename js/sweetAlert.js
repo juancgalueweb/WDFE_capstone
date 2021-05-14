@@ -1,11 +1,11 @@
-$("#enviar").click(function() {
-    let name = $("#formName").val();
-    let lastName = $("#lastName").val();
-    let country = $("#country").val();
-    let email = $("#emailAddress").val();
-    let comments = $("#textArea").val();
+$("#enviar").click(function () {
+    const name = $("#formName").val();
+    const lastName = $("#lastName").val();
+    const country = $("#country").val();
+    const email = $("#emailAddress").val();
+    const comments = $("#textArea").val();
 
-    if (name == "" || lastName == "" || country == "" || email == "" || comments == "") {
+    if (areFieldsInvalid({ name: name, lastName: lastName, country: country, email: email, comments: comments })) {
         swal({
             title: "Fields empty/invalid!",
             text: "Please, check all the fields!",
@@ -20,4 +20,9 @@ $("#enviar").click(function() {
             button: "Great!",
         });
     }
-} ); 
+});
+
+function areFieldsInvalid(fields) {
+    console.log("areFieldsInvalid: " + (fields.name == "" || fields.lastName == "" || fields.country == "" || fields.email == "" || fields.comments == ""))
+    return fields.name == "" || fields.lastName == "" || fields.country == "" || fields.email == "" || fields.comments == ""
+}
