@@ -6,23 +6,32 @@ $("#enviar").click(function () {
     const comments = $("#textArea").val();
 
     if (areFieldsInvalid({ name: name, lastName: lastName, country: country, email: email, comments: comments })) {
-        swal({
+        Swal.fire({
             title: "Fields empty/invalid!",
             text: "Please, check all the fields!",
             icon: "warning",
             button: "Retry",
         });
     } else {
-        swal({
+        Swal.fire({
             title: "Thank you!",
-            text: "You just sent the form",
+            text: "In fact, the form was not sent because we need a PHP code or something to actually work",
             icon: "success",
-            button: "Great!",
+            timer: 6000,
+        });
+
+        $('#followForm').on('submit', function (event, force) {
+            if (!force) {
+                event.preventDefault();
+                setTimeout(function () {
+                    $('#followForm').trigger('submit', true);
+                }, 6500);
+            }
         });
     }
 });
 
 function areFieldsInvalid(fields) {
-    console.log("areFieldsInvalid: " + (fields.name == "" || fields.lastName == "" || fields.country == "" || fields.email == "" || fields.comments == ""))
     return fields.name == "" || fields.lastName == "" || fields.country == "" || fields.email == "" || fields.comments == ""
 }
+
