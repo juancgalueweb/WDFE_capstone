@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 
 #beaches {
-    background: #827FE9;
-    background: -webkit-linear-gradient(bottom, #827FE9, #72B1E9);
-    background: -moz-linear-gradient(bottom, #827FE9, #72B1E9);
-    background: linear-gradient(to top, #827FE9, #72B1E9);
+    background-color: #E0E0E0;
 }
 
 #mountains {
-    background: #BE712E;
-    background: -webkit-linear-gradient(bottom, #BE712E, #DFBA9A);
-    background: -moz-linear-gradient(bottom, #BE712E, #DFBA9A);
-    background: linear-gradient(to top, #BE712E, #DFBA9A);;
+    background-color: #E0E0E0;
+}
+
+p, h1, h2 {
+    color: #3e3e3e;
 }
 
 img {
@@ -33,4 +31,10 @@ img {
 h1 {
     padding: 1%;
     font-family: 'Amatic SC', cursive;
+}
+
+.sombra {
+    box-shadow: 0px 3px 14px 4px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0px 3px 14px 4px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 3px 14px 4px rgba(0,0,0,0.4);
 }
