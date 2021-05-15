@@ -29,7 +29,6 @@ a[href^="https"]:hover {
     width: 35%;
     height: auto;
     min-width: 300px;
-
 }
 
 textarea {
