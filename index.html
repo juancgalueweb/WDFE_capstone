@@ -42,7 +42,7 @@
                 <img src="pictures/Me_768px.png" srcset="pictures/me_300px.jpeg 500w, pictures/Me_768px.png 1000w" alt="Picture of me" class="img-fluid mx-auto lx-screen">
                 <h1 class="text-center mb-3 mt-3">A little bit about me</h1>                    
                 <div class="col-md-6">
-                    <p>I am a Venezuelan guy living in Chile, <strong>and an electrical engineer</strong> with more than 14 years in the industry, specifically in power generation and distribution, but since the pandemic I started to realize that I wanted to do something differente with my life. I found programming a fascinated subject in the highschool but somehow I lost the path and now I want to reconnect with my passion for programming. <strong>I want to become a Front-end Web Developer</strong> and master JS and then learn React. Later I want to explore the Back-end.</p>
+                    <p>I am a Venezuelan guy living in Chile, <strong>and an electrical engineer</strong> with more than 14 years in the industry, specifically in power generation and distribution, but since the pandemic I started to realize that I wanted to do something different with my life. I found programming a fascinated subject in the high school, but somehow I lost the path and now I want to reconnect with my passion for programming. <strong>I want to become a Front-end Web Developer</strong> and master JS and then learn React. Later I want to explore the Back-end.</p>
                 </div>
                 <div class="col-md-6">
                     <p>Soy un venezolano viviendo en Chile, <strong>Ingeniero Electricista</strong> de profesi&oacute;n con m&aacute;s de 14 a&ntilde;os de experiencia en la industria, especialmente en generaci&oacute;n y distribuci&oacute;n de potencia, pero desde la pandemia empec&eacute; a darme cuenta que quer&iacute;a hacer algo diferente con mi vida. Durante la secundaria descubr&iacute; que la programaci&oacute;n era una materia fascinante, pero de alguna forma perd&iacute; el camino y ahora quiero reconectarme con mi pasi&oacute;n por la programaci&oacute;n. <strong>Quiero convertirme en un programador web en el Front-end</strong> y dominar JS y luego aprender React. Luego quiero explorar el Back-end.</p>
@@ -70,13 +70,13 @@
                     <div class="text-center">
                         <img src="pictures/js.svg" alt="JavaScript icon" class="icon-resize pb-3">   
                     </div>
-                    <p>I used JavaScrip to implement a nice touch to the pictures in the gallery, using an existing plugin. I also used it to manage the alerts when there are invalid fields in the form and when it is successfully &ldquo;submitted&rdquo;. </p>
+                    <p>I used JavaScript to implement a nice touch to the pictures in the gallery, using an existing plugin. I also used it to manage the alerts when there are invalid fields in the form and when it is successfully &ldquo;submitted&rdquo;. </p>
                 </div>
                 <div class="col-md-3">
                     <div class="text-center">
                         <img src="pictures/bootstrap.png" alt="Bootstrap icon" class="icon-resize2">
                     </div>
-                    <p>I decided to write the code from the stracth with the help of a framework, in this case, Bootstrap 5. I used it to arrange the content in the layout, to have a responsive layout, to use buttons, a contact form, a navigation bar, a footer, and so on.</p>
+                    <p>I decided to write the code from the scratch with the help of a framework, in this case, Bootstrap 5. I used it to arrange the content in the layout, to have a responsive layout, to use buttons, a contact form, a navigation bar, a footer, and so on.</p>
                 </div>
             </div>
         </div>
@@ -94,13 +94,13 @@
                     <div class="col-md-3">
                         <label for="formName" class="form-label">First name <span>*</span></label>
                         <input type="text" name="name" id="formName" class="form-control" placeholder="Juan" required pattern="[a-zA-Z][a-zA-Z ]{2,}">
-                        <div class="invalid-feedback">Valid name is required</div>
+                        <div class="invalid-feedback">Only letters are allowed, no special characters.</div>
                     </div>
 
                     <div class="col-md-3">
                         <label for="lastName" class="form-label">Last name <span>*</span></label>
                         <input type="text" name="lastName" id="lastName" class="form-control" placeholder="Galue" required pattern="[a-zA-Z][a-zA-Z ]{2,}">
-                        <div class="invalid-feedback">Valid last name is requiered.</div>
+                        <div class="invalid-feedback">Only letters are allowed, no special characters.</div>
                     </div>
 
                     <div class="col-md-6">
@@ -352,7 +352,7 @@
                             <option value="Zambia">Zambia</option>
                             <option value="Zimbabwe">Zimbabwe</option>
                         </select>
-                        <div class="invalid-feedback">Please select a country</div>
+                        <div class="invalid-feedback">Please select a country.</div>
                     </div>
 
                     <div class="col-md-12">
@@ -364,7 +364,7 @@
                     <div class="col-md-12">
                         <label for="textArea" class="form-label">Comments <span>*</span></label>
                         <textarea name="comments" id="textArea" rows="3" class="form-control" required></textarea>
-                        <div class="invalid-feedback">Please write your thoughts, thanks.</div>
+                        <div class="invalid-feedback">Please, write what you think.</div>
                     </div>
 
                     <div class="col-md-12">
@@ -375,11 +375,12 @@
             </div>
         </div>
     </div>
-    
+
+    <!-- Back to Top Button -->
     <div class="container">
         <div class="row">
             <div class="col-sm-4 col-md-3 col-lg-2 mx-auto mb-4 text-center">
-                <a href="#" class="btn btn-warning" role="button">Back to Top</a>
+                <a href="#" class="btn btn-warning" role="button" onclick="topFunction()">Back to Top</a>
             </div>
         </div>
     </div>
