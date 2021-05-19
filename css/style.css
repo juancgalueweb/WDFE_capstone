@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 
-#bg-index {
-    background-color: #E0E0E0;
+:root {
+    --lightBackground: #E0E0E0;
+    --textDarkColor: #3e3e3e;
+    --asideBackground: #DEE2E6;
+    --codeBackground: #f1f1f1;
+}
+
+#bg-index, #beaches, #mountains {
+    background-color: var(--lightBackground);
 }
 
 p, h1, h2, h3 {
-    color: #3e3e3e;
+    color: var(--textDarkColor);
 }
 
 section > p {
@@ -17,11 +24,11 @@ h1, h2, h3 {
     font-family: 'Amatic SC', cursive;
 }
 
-a[href^="https"] {
+a[href^="https"], aside a {
     text-decoration: none;
 }
 
-a[href^="https"]:hover {
+a[href^="https"]:hover, aside a:hover {
     text-decoration: underline;
 }
 
@@ -64,7 +71,39 @@ span {
     bottom: 0;
     left: 0;
     margin: 0 auto;
-    padding: 1%;
-    height: 100%;
+    padding: 0;
+    height: 95%;
+    width: 95%;
+}
+
+figure img {
     width: 100%;
+    height: auto;
+}
+
+.my-gallery figcaption {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    figure {
+        display: inline-block;
+        width: 46%;
+    }
+}
+
+.sombra {
+    box-shadow: 0px 3px 14px 4px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0px 3px 14px 4px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 3px 14px 4px rgba(0,0,0,0.4);
+}
+
+aside-bg {
+    background-color: var(--asideBackground);
+}
+
+.code-style {
+    background-color: var(--codeBackground);
+    padding: .2em;
+    border-radius: 5px;
 }

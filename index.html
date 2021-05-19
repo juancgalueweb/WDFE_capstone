@@ -7,7 +7,9 @@
     <title>Juancho's gallery Home</title>
     <link rel="shortcut icon" href="pictures/home.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/a3943cb153.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- Bootstrap 5.0 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-light">
@@ -86,6 +88,46 @@
         </div>
     </section>
 
+<!-- Extras for this project -->
+    <aside class="container px-4">
+        <div class="row">
+            <h1 class="text-center">Extras </h1>
+            <div class="col-md-12">
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item-primary d-flex justify-content-between align-items-start px-2 pt-3">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Photo Swipe</div>
+                            I wanted to use a Photo Swipe style for the images in the <a href="beaches.html" class="link-primary fw-bold">beaches.html</a> and <a href="mountains.html" class="link-primary fw-bold">mountains.html</a>. At first I was going to do it by myself but at the present moment <code class="code-style">(May, 2021)</code> it is too tricky for me and someone else has already written that plugin. Even when the code was already written, it took me a while to make it work. So, this <a href="https://photoswipe.com/" target="_blank" class="link-primary fw-bold">PhotoSwipe V.4.1.3 plugin</a> allows you to use touch gestures for mobile phone experience, you can click to zoom an image, social sharing, you can use the keyboard to swipe the images, it counts how many images you have in your gallery and display the right number depending on what image you are, and so much more. Give it a try!
+                        </div>
+                    </li>
+                    <li class="list-group-item-primary d-flex justify-content-between align-items-start px-2">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Using GitHub Pages</div>
+                            I decided to learn Git by myself after a programmer friend told me about it and I just loved it. All this web page is in my Github repository and I used a great feature called <a href="https://pages.github.com/" target="_blank" class="link-primary fw-bold">GitHub Pages</a> that allowed me to host my static web page. The only drawback is that I tried to use a small PHP Code to get the values from the form to receive them in my e-mail but the <code class="code-style">method="POST"</code> is not allowed by GitHub Pages. Anyways, it is a great and free resource to host your creations.
+                        </div>
+                    </li>
+                    <li class="list-group-item-primary d-flex justify-content-between align-items-start px-2 pb-3">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">My JavaScript codes</div>
+                            I wrote smalls codes to handle a few things:
+                            <ul class="list-group">
+                                <li class="list-group-item-primary ms-4">
+                                    A code that store some values from the form, to play with a plugin called <a href="https://sweetalert2.github.io/" target="_blank" class="link-primary fw-bold">Sweet Alert 2</a> to display nice alerts when the form is sent or when some fieds are not valid.</li>
+                                <li class="list-group-item-primary ms-4">
+                                    A code used when the pages are loaded in small devices; it reads the width of the screen and trigger a smooth return to the top of the page function when the <code class="code-style">Back to Top</code> button is clicked.
+                                </li>
+                                <li class="list-group-item-primary ms-4">
+                                    I used BootStrap 5 to use the built in CSS to "validate" the form, and a small JS code to check the validity of the form, and display correct/wrong messages after clicking the <code class="code-style">Submit Button</code>.
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </aside>
+
+    </aside>
     <!-- Where I live -->
     <section>
         <div class="container py-3">
@@ -109,8 +151,6 @@
                 <h1 class="text-center">Contact Me</h1>
                 <p class="lead">Please be nice with your comments or suggestions, this is my first project. Thank you for your participation.</p>
                 <form class="row g-3 needs-validation" novalidate id="followForm">
-                    <!-- onsubmit="return false;" -->
-                    <div class="messages"></div>  <!-- that will serve us to display the success/error message after sending form via AJAX-->
                     <div class="col-md-3">
                         <label for="formName" class="form-label">First name <span>*</span></label>
                         <input type="text" name="name" id="formName" class="form-control" placeholder="Juan" required pattern="[a-zA-Z][a-zA-Z ]{2,}">
@@ -440,7 +480,9 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <!-- Bootstrap 5.0 Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- Ny form validation code -->
     <script src="js/form_validation.js"></script>
     <!-- Sweet Alert 2 CDN -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.7/dist/sweetalert2.all.min.js" integrity="sha256-irOGZtiaBzeZiGc4qF3pn+RajcrJrTFYbCMuOfm8VG8=" crossorigin="anonymous"></script>
