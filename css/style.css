@@ -90,6 +90,9 @@ figure img {
         display: inline-block;
         width: 46%;
     }
+}
+
+@media screen and (max-width: 992px) {
     svg {
         display: none;
     }
