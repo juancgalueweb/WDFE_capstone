@@ -33,7 +33,7 @@ a[href^="https"]:hover, aside a:hover {
 }
 
 .lx-screen {
-    width: 35%;
+    width: 30%;
     height: auto;
     min-width: 300px;
 }
@@ -106,4 +106,17 @@ aside-bg {
     background-color: var(--codeBackground);
     padding: .2em;
     border-radius: 5px;
+}
+
+div.wave-container {
+    width: 100%;
+    bottom: 0;
+    position: relative;
+}
+
+.wave-container > svg {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
 }
