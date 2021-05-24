@@ -14,9 +14,10 @@
 </head>
 <body class="bg-light">
     <div class="col-md-10 shadow mx-auto" id="bg-index">
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top shadow">
         <div class="container-fluid">
-            <a href="#" class="navbar-brand">
+            <a href="#" class="navbar-brand hover-effect">
                 <i class="far fa-images d-inline-block align-text-top"></i>
                 Juancho's Gallery
             </a>
@@ -26,18 +27,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                      <a class="nav-link active text-danger" aria-current="page" href="index.html">Home</a>
+                      <a class="nav-link active text-danger hover-effect" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="beaches.html">Beaches</a>
+                      <a class="nav-link hover-effect" href="beaches.html">Beaches</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="mountains.html">Mountains</a>
+                      <a class="nav-link hover-effect" href="mountains.html">Mountains</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <header>
         <div class="container">
             <div class="row pt-3 px-3 wave-container mx-auto">
@@ -71,7 +73,7 @@
                     <div class="text-center">
                         <img src="pictures/css3.svg" alt="CSS3 icon" class="icon-resize pb-3">
                     </div>
-                    <p>CSS is a great tool to stylish your page. In this case I have also used CSS3 to override some Bootstrap initial setups, and to add styles to <a href="https://fontawesome.com/" target="_blank" class="link-primary fw-bold">FontAwesome icons</a>.</p>
+                    <p>CSS is a great tool to stylish your page. In this case I have also used CSS3 to override some Bootstrap initial setups, and to add styles to <a href="https://fontawesome.com/" target="_blank" class="fw-bold underline">FontAwesome icons</a>.</p>
                 </div>
                 <div class="col-md-3">
                     <div class="text-center">
@@ -98,13 +100,13 @@
                     <li class="list-group-item-primary d-flex justify-content-between align-items-start px-2 pt-3">
                         <div class="ms-2 me-auto">
                             <div class="fw-bold">Photo Swipe</div>
-                            I wanted to use a Photo Swipe style for the images in the <a href="beaches.html" class="link-primary fw-bold">beaches.html</a> and <a href="mountains.html" class="link-primary fw-bold">mountains.html</a>. At first I was going to do it by myself but at the present moment <code class="code-style">(May, 2021)</code> it is too tricky for me and someone else has already written that plugin. Even when the code was already written, it took me a while to make it work. So, this <a href="https://photoswipe.com/" target="_blank" class="link-primary fw-bold">PhotoSwipe V.4.1.3 plugin</a> allows you to use touch gestures for mobile phone experience, you can click to zoom an image, social sharing, you can use the keyboard to swipe the images, it counts how many images you have in your gallery and display the right number depending on what image you are, and so much more. Give it a try!
+                            I wanted to use a Photo Swipe style for the images in the <a href="beaches.html" class="fw-bold underline">beaches.html</a> and <a href="mountains.html" class="fw-bold underline">mountains.html</a>. At first I was going to do it by myself but at the present moment <code class="code-style">(May, 2021)</code> it is too tricky for me and someone else has already written that plugin. Even when the code was already written, it took me a while to make it work. So, this <a href="https://photoswipe.com/" target="_blank" class="fw-bold underline">PhotoSwipe V.4.1.3 plugin</a> allows you to use touch gestures for mobile phone experience, you can click to zoom an image, social sharing, you can use the keyboard to swipe the images, it counts how many images you have in your gallery and display the right number depending on what image you are, and so much more. Give it a try!
                         </div>
                     </li>
                     <li class="list-group-item-primary d-flex justify-content-between align-items-start px-2">
                         <div class="ms-2 me-auto">
                             <div class="fw-bold">Using GitHub Pages</div>
-                            I decided to learn Git by myself after a programmer friend told me about it and I just loved it. All this web page is in my Github repository and I used a great feature called <a href="https://pages.github.com/" target="_blank" class="link-primary fw-bold">GitHub Pages</a> that allowed me to host my static web page. The only drawback is that I tried to use a small PHP Code to get the values from the form to receive them in my e-mail but the <code class="code-style">method="POST"</code> is not allowed by GitHub Pages. Anyways, it is a great and free resource to host your creations.
+                            I decided to learn Git by myself after a programmer friend told me about it and I just loved it. All this web page is in my Github repository and I used a great feature called <a href="https://pages.github.com/" target="_blank" class="fw-bold underline">GitHub Pages</a> that allowed me to host my static web page. The only drawback is that I tried to use a small PHP Code to get the values from the form to receive them in my e-mail but the <code class="code-style">method="POST"</code> is not allowed by GitHub Pages. Anyways, it is a great and free resource to host your creations.
                         </div>
                     </li>
                     <li class="list-group-item-primary d-flex justify-content-between align-items-start px-2 pb-3">
@@ -113,7 +115,7 @@
                             I wrote smalls codes to handle a few things:
                             <ul class="list-group">
                                 <li class="list-group-item-primary ms-4">
-                                    A code that store some values from the form, to play with a plugin called <a href="https://sweetalert2.github.io/" target="_blank" class="link-primary fw-bold">Sweet Alert 2</a> to display nice alerts when the form is sent or when some fieds are not valid.</li>
+                                    A code that store some values from the form, to play with a plugin called <a href="https://sweetalert2.github.io/" target="_blank" class="fw-bold underline">Sweet Alert 2</a> to display nice alerts when the form is sent or when some fieds are not valid.</li>
                                 <li class="list-group-item-primary ms-4">
                                     A code used when the pages are loaded in small devices; it reads the width of the screen and trigger a smooth return to the top of the page function when the <code class="code-style">Back to Top</code> button is clicked.
                                 </li>
@@ -131,7 +133,7 @@
     </aside>
     <!-- Where I live -->
     <section>
-        <div class="container py-3">
+        <div class="container pt-3 pb-1">
             <div class="row justify-content-center">
                 <h2 class="text-center">Where do I live?</h2>
                 <div class="col-md-2">
@@ -148,7 +150,7 @@
 <!-- Contact Form -->
     <div class="container" id="formTag">
         <div class="row">
-            <div class="col-md-8 offset-md-2 py-5">
+            <div class="col-md-8 offset-md-2 pt-2 pb-5">
                 <h1 class="text-center">Contact Me</h1>
                 <p class="lead">Please be nice with your comments or suggestions, this is my first project. Thank you for your participation.</p>
                 <form class="row g-3 needs-validation" novalidate id="followForm">
