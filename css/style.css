@@ -6,6 +6,8 @@
     --asideBackground: #DEE2E6;
     --codeBackground: #f1f1f1;
     --navLightBackground: #F8F9FA;
+    --hoverLinksBeach: #228BE6;
+    --hoverLinksMountain: #37B24D;
 }
 
 #bg-index, #beaches, #mountains {
@@ -54,8 +56,8 @@ a[href^="https"], a.underline {
     }
   }
 
-  /* Nav links hover effecto */
-.hover-effect {
+  /* Nav links hover effect index, beach & mountain htmls */
+.hover-effect, .hover-effect-beach, .hover-effect-mountain {
     transition: 0.3s ease;
     background: var(--navLightBackground);
     border-bottom: 4px solid var(--navLightBackground);
@@ -65,6 +67,14 @@ a[href^="https"], a.underline {
 @media screen and (min-width: 768px) {
     .hover-effect:hover {
         border-bottom: 4px solid rgba(153, 0, 239, .5);
+        padding: 6px 0;
+    }
+    .hover-effect-beach:hover {
+        border-bottom: 4px solid var(--hoverLinksBeach);
+        padding: 6px 0;
+    }
+    .hover-effect-mountain:hover {
+        border-bottom: 4px solid var(--hoverLinksMountain);
         padding: 6px 0;
     }
 }
