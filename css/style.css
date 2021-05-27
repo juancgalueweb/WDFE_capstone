@@ -8,6 +8,9 @@
     --navLightBackground: #F8F9FA;
     --hoverLinksBeach: #228BE6;
     --hoverLinksMountain: #37B24D;
+    --linksColor: #0858DD;
+    --codeColor: #D50972;
+    --spanColor: #CA0404;
 }
 
 #bg-index, #beaches, #mountains {
@@ -30,7 +33,7 @@ h1, h2, h3 {
 /* Anchor tags formatting and hover effect*/
 a[href^="https"], a.underline {
     text-decoration: none;
-    color: #0074D9;
+    color: var(--linksColor);
 }
 
 .underline {
@@ -44,7 +47,7 @@ a[href^="https"], a.underline {
     right: 0;
     width: 0;
     height: 2px;
-    background-color: #0074D9;
+    background-color: var(--linksColor);
     transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
   }
 
@@ -90,7 +93,7 @@ textarea {
 }
 
 form span {
-    color: red;
+    color: var(--spanColor);
 }
 
 .icon-resize {
@@ -159,6 +162,7 @@ aside-bg {
     background-color: var(--codeBackground);
     padding: .2em;
     border-radius: 5px;
+    color: var(--codeColor);
 }
 
 div.wave-container {
