@@ -6,11 +6,24 @@
     --asideBackground: #DEE2E6;
     --codeBackground: #f1f1f1;
     --navLightBackground: #F8F9FA;
+    --hoverIndex: #DB2A3A;
     --hoverLinksBeach: #228BE6;
-    --hoverLinksMountain: #37B24D;
+    --hoverLinksMountain: #24C995;
     --linksColor: #0858DD;
     --codeColor: #D50972;
     --spanColor: #CA0404;
+}
+
+#navbar-link-active {
+    color: var(--hoverIndex);
+}
+
+#navbar-link-beach {
+    color: #0F58CE;
+}
+
+#navbar-link-mountain {
+    color: #17815F;
 }
 
 #bg-index, #beaches, #mountains {
@@ -69,7 +82,7 @@ a[href^="https"], a.underline {
 }
 @media screen and (min-width: 768px) {
     .hover-effect:hover {
-        border-bottom: 4px solid rgba(153, 0, 239, .5);
+        border-bottom: 4px solid var(--hoverIndex);
         padding: 6px 0;
     }
     .hover-effect-beach:hover {
