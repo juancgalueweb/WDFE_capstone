@@ -139,6 +139,10 @@ form span {
     width: 95%;
 }
 
+figure {
+    overflow: hidden;
+}
+
 figure img {
     width: 100%;
     height: auto;
@@ -147,6 +151,16 @@ figure img {
 .my-gallery figcaption {
     display: none;
 }
+
+.scale figure img {
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+
+.scale figure:hover img {
+    transform: scale(1.1);
+}
+
 
 @media screen and (min-width: 768px) {
     figure {
